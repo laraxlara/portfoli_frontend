@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path='/' element={ <Home />} />
-          <Route exact path='/about' element={ <About /> } />
-          <Route exact path='/projects' element={ <Projects /> } /> 
-          <Route exact path='/contact' element={ <Contact />} /> 
+          <Route exact path='https://laracelic.onrender.com/' element={ <Home />} />
+          <Route exact path='https://laracelic.onrender.com/about' element={ <About /> } />
+          <Route exact path='https://laracelic.onrender.com/projects' element={ <Projects /> } /> 
+          <Route exact path='https://laracelic.onrender.com/contact' element={ <Contact />} /> 
         </Routes>
       </Router>
     </div>
