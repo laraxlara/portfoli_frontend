@@ -3,6 +3,7 @@ import React from 'react'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { AiFillFacebook } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 import me from '../images/me.jpg'
 
@@ -17,7 +18,7 @@ const Navbar = () => {
       <nav>
         <div className='navigation-links'>
           <a href='/'>Home</a>
-          <a href='/about'>About</a>
+          <Link to='/about'>About</Link>
           <a href='/projects'>Projects</a>
           <a href='/contact'>Contact</a>
         </div>
