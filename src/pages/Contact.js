@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleStateChange = async e => {
     try {
-      const response = await fetch('http://localhost:5000/send')
+      const response = await fetch('https://laracelic-api.onrender.com/send')
         .then((res) => res.json())
         .then((data) => setMessage(data.message));
         console.log(response)

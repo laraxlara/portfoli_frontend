@@ -16,10 +16,10 @@ const Navbar = () => {
       </div>
       <nav>
         <div className='navigation-links'>
-          <a href='/'>Home</a>
-          <a href='/about'>About</a>
-          <a href='/projects/'>Projects</a>
-          <a href='/contact/'>Contact</a>
+          <a href='https://laracelic.onrender.com/'>Home</a>
+          <a href='https://laracelic.onrender.com/about'>About</a>
+          <a href='https://laracelic.onrender.com/projects'>Projects</a>
+          <a href='https://laracelic.onrender.com/contact'>Contact</a>
         </div>
         <div className='social-media-icons'>
           <div className='linkdin-icon'>

@@ -13,7 +13,6 @@ import '../styles/Home.css'
 
 function Model(props) {
     const group = useRef()
-    // const { nodes } = useGLTF('./earth.gltf')
     useFrame(({ pointer }) => (group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, pointer.x * (Math.PI / 5), 0.005)))
     return (
       <group ref={group} {...props}>
