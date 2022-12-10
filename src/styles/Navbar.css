@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+.navbar-container {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar-container nav {
+    background-color: black;
+    
+}
+
+.navigation-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.navigation-links a {
+    position: relative;
+}
+
+.navigation-links a::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgb(116, 116, 116);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navigation-links a:hover {
+    background-color: rgb(22, 22, 22);
+}
+
+.image-container image {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+.navbar-container nav a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem 2rem 2rem .7rem;
+    font-size: 1.2rem;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    
+}
+
+.social-media-icons .linkdin-icon,
+.social-media-icons .instagram-icon,
+.social-media-icons .facebook-icon {
+    padding: 1rem 1rem 0 1rem;
+}
+
+
+.social-media-icons .linkdin-icon a,
+.social-media-icons .instagram-icon a,
+.social-media-icons .facebook-icon a {
+    font-size: 1.8rem;
+}
+
+.linkdin-icon svg {
+    color: #0A66C2;
+    background: white;
+    border-radius: 5px;
+}
+
+.instagram-icon svg {
+    background: linear-gradient(#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    border-radius: 5px;
+}
+
+.facebook-icon svg {
+    color: #4267B2;
+    background: white;
+    border-radius: 5px;
+}
+
+.linkdin-icon svg:hover {
+    transform: scale(1.6);
+    transition: 1s ease-out;
+}
+
+.instagram-icon svg:hover {
+    transform: scale(1.6);
+    transition: 1s ease-in-out;
+}
+
+.facebook-icon svg:hover {
+    transform: scale(1.6);
+    transition: 1s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar-container {
+        height: 4rem;
+        width: 100%;
+    }
+    .navbar-container nav {
+        padding-top: 0;
+    }
+    .image-container {
+        display: none;
+    }
+    .navigation-links {
+        flex-direction: row;
+        padding-top: 0;
+        float: right;
+    }
+    .social-media-icons {
+        display: none;
+    }
+    .navbar-container nav a {
+        padding: 1.3rem;
+        font-size: 1rem;
+    }
+}
