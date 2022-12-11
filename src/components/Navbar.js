@@ -23,14 +23,14 @@ const Navbar = () => {
           <Link href='/contact'>Contact</Link>
         </div>
         <div className='social-media-icons'>
-          <div className='linkdin-icon'>
+          <div className='linkdin-icon' target="_blank">
             <a href='/'><AiFillLinkedin /></a>
           </div>
           <div className='instagram-icon'>
-            <a href='https://www.instagram.com/lara.celic/'><AiOutlineInstagram /></a>
+            <a href='https://www.instagram.com/lara.celic/' target="_blank"><AiOutlineInstagram /></a>
           </div>
           <div className='facebook-icon'>
-            <a href='https://www.facebook.com/lara.celic.1'><AiFillFacebook /></a>
+            <a href='https://www.facebook.com/lara.celic.1' target="_blank"><AiFillFacebook /></a>
           </div>
         </div>
       </nav>
