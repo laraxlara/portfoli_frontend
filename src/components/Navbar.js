@@ -19,8 +19,8 @@ const Navbar = () => {
         <div className='navigation-links'>
           <a href='/'>Home</a>
           <Link to='/about'>About</Link>
-          <a href='/projects'>Projects</a>
-          <a href='/contact'>Contact</a>
+          <Link href='/projects'>Projects</Link>
+          <Link href='/contact'>Contact</Link>
         </div>
         <div className='social-media-icons'>
           <div className='linkdin-icon'>
