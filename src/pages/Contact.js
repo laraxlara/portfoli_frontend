@@ -77,6 +77,7 @@ const Contact = () => {
           <div className='contact-info-wrapper'>
             <div className='contact-info'>
                 <video src={contact} autoPlay muted loop />
+                <div className='info'>
                 <h1>Get in touch with me</h1>
                 <p>If you are interested in collaboration, need an outstanding website for your business or have any other kind of question just fill out the form.</p>
                 <h2>Contact Information</h2>
@@ -96,6 +97,7 @@ const Contact = () => {
                   <div className='social-media-icon'>
                     <a to='https://github.com/laraxlara' target="_blank"><AiOutlineGithub /></a>
                   </div>
+                </div>
                 </div>
             </div>
           </div>
