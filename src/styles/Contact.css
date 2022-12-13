@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 
 .contact-page-container {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    
 
     height: 100vh;
     font-family: 'Source Code Pro', monospace;
@@ -16,18 +14,7 @@
 
 .contact-page-wrapper {
     display: flex;
-    justify-content: space-between;
-}
-
-.form-wrapper {
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.8;
-    background-color: black;
+    flex-direction: row;
 }
 
 .contact-info-wrapper {
@@ -64,7 +51,7 @@
 .contact-info p {
     font-weight: lighter;
     margin-bottom: 15px;
-}
+} 
 
 
 .contact-info h1 {
@@ -95,9 +82,21 @@
     transition: ease-in 1s;
 }
 
+/* FROM STYLES */
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    background-color: black;
+}
+
 form {
-    flex-basis: 48%;
-    
+    flex-basis: 48%; 
 }
 
 form input {
@@ -138,9 +137,22 @@ form button:hover {
     background-color: rgb(26, 26, 26);
 }
 
-/* @media (max-width: 500px) {
+@media(max-width: 1200px) {
+    .contact-page-container {
+        margin-left: 0;
+    }
+    .info {
+        padding-left: 0;
+        padding: 1rem;
+    }
+    .contact-info-wrapper {
+        width: 100%;
+    }
+    .form-wrapper {
+        width: 100%;
+        height: 100vh;
+    }
    .contact-page-wrapper {
-        display: flex;
         flex-direction: column;
     }
     form button {
@@ -148,53 +160,9 @@ form button:hover {
     }
     form input,
     form textarea {
-        width: 100%;
-        margin-left: 0;
-    }
-    form input {
-        margin-bottom: 0px;
-    }
-} */
-
-@media(max-width: 1200px) {
-    .contact-page-container {
-        margin-left: 0;
-    }
-   .contact-page-wrapper {
-        display: flex;
-        /* flex-direction: column; */
-    }
-    form button {
-        margin-left: 0;
-    }
-    form input,
-    form textarea {
-        width: 400px;
+        width: 350px;
         margin: 10px;
         padding: 15px 25px;
     }
 }
 
-@media(max-width: 1000px) {
-    .contact-page-container {
-        width: 100%;
-    }
-    .contact-page-wrapper {
-        flex-direction: column;
-    }
-    .contact-info-wrapper, 
-    .form-wrapper {
-        width: 100%;
-    }
-    .contact-info h1 {
-        font-size: 2.4rem;
-        margin-top: 2rem;
-    }
-    .form-wrapper {
-        align-items: center;
-    }
-
-    form button {
-        margin-left: 2rem;
-    }
-}
