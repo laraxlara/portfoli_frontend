@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import '../styles/About.css'
 
 const About = () => {
-  const fileUrl = 'http://localhost:5000/download'
+  const fileUrl = 'https://laracelic.onrender.com/download'
 
   const handleFileDownload = async () => {
     const response = axios.get({
