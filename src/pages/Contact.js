@@ -86,16 +86,16 @@ const Contact = () => {
                   <h3>&#8594; Novi Sad, Serbia</h3>
                   <div className='social-media-icons-contact'>
                     <div className='social-media-icon' target="_blank">
-                      <a to='/'><AiFillLinkedin /></a>
+                      <a href='/'><AiFillLinkedin /></a>
                     </div>
                     <div className='social-media-icon'>
-                      <a to='https://www.instagram.com/lara.celic/' target="_blank"><AiOutlineInstagram /></a>
+                      <a href='https://www.instagram.com/lara.celic/' target="_blank"><AiOutlineInstagram /></a>
                     </div>
                     <div className='social-media-icon'>
-                      <a to='https://www.facebook.com/lara.celic.1' target="_blank"><AiFillFacebook /></a>
+                      <a href='https://www.facebook.com/lara.celic.1' target="_blank"><AiFillFacebook /></a>
                     </div>
                     <div className='social-media-icon'>
-                      <a to='https://github.com/laraxlara' target="_blank"><AiOutlineGithub /></a>
+                      <a href='https://github.com/laraxlara' target="_blank"><AiOutlineGithub /></a>
                     </div>
                   </div>
                 </div>
