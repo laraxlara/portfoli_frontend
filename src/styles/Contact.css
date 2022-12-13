@@ -12,6 +12,10 @@
     padding-left: 8rem;
 }
 
+.contact-info {
+    z-index: 1000;
+}
+
 .contact-page-wrapper {
     display: flex;
     flex-direction: row;
