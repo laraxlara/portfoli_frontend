@@ -76,28 +76,28 @@ const Contact = () => {
 
           <div className='contact-info-wrapper'>
             <div className='contact-info'>
-                <video src={contact} autoPlay muted loop />
+                {/* <video src={contact} autoPlay muted loop /> */}
                 <div className='info'>
-                <h1>Get in touch with me</h1>
-                <p>If you are interested in collaboration, need an outstanding website for your business or have any other kind of question just fill out the form.</p>
-                <h2>Contact Information</h2>
-                <h3>&#8594; laraa.celic7@gmail.com</h3>
-                <h3>&#8594; laraxlara97@gmail.com</h3>
-                <h3>&#8594; Novi Sad, Serbia</h3>
-                <div className='social-media-icons-contact'>
-                  <div className='social-media-icon' target="_blank">
-                    <a to='/'><AiFillLinkedin /></a>
+                  <h1>Get in touch with me</h1>
+                  <p>If you are interested in collaboration, need an outstanding website for your business or have any other kind of question just fill out the form.</p>
+                  <h2>Contact Information</h2>
+                  <h3>&#8594; laraa.celic7@gmail.com</h3>
+                  <h3>&#8594; laraxlara97@gmail.com</h3>
+                  <h3>&#8594; Novi Sad, Serbia</h3>
+                  <div className='social-media-icons-contact'>
+                    <div className='social-media-icon' target="_blank">
+                      <a to='/'><AiFillLinkedin /></a>
+                    </div>
+                    <div className='social-media-icon'>
+                      <a to='https://www.instagram.com/lara.celic/' target="_blank"><AiOutlineInstagram /></a>
+                    </div>
+                    <div className='social-media-icon'>
+                      <a to='https://www.facebook.com/lara.celic.1' target="_blank"><AiFillFacebook /></a>
+                    </div>
+                    <div className='social-media-icon'>
+                      <a to='https://github.com/laraxlara' target="_blank"><AiOutlineGithub /></a>
+                    </div>
                   </div>
-                  <div className='social-media-icon'>
-                    <a to='https://www.instagram.com/lara.celic/' target="_blank"><AiOutlineInstagram /></a>
-                  </div>
-                  <div className='social-media-icon'>
-                    <a to='https://www.facebook.com/lara.celic.1' target="_blank"><AiFillFacebook /></a>
-                  </div>
-                  <div className='social-media-icon'>
-                    <a to='https://github.com/laraxlara' target="_blank"><AiOutlineGithub /></a>
-                  </div>
-                </div>
                 </div>
             </div>
           </div>
