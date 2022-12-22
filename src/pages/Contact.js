@@ -60,7 +60,7 @@ const Contact = () => {
           </div>
 
           <div className='form-wrapper'>
-            <form onSubmit={handleStateChange}>
+            <form method='POST' onSubmit={handleStateChange}>
               <input placeholder="Name" value={name} onChange={e => setName(e.target.value)} required />
               <input placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
               <textarea cols="52" rows="7" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} required></textarea>
