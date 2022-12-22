@@ -10,12 +10,14 @@ import { AiOutlineGithub } from 'react-icons/ai'
 import '../styles/Contact.css'
 
 const Contact = () => {
+  const [sent, setSent] = useState(false)
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
 
   const handleStateChange = async e => {
     e.preventDefault()
+    setSent(true)
     try {
       await axios.post('https://laracelic-api.onrender.com/send', {
         name,
@@ -61,10 +63,11 @@ const Contact = () => {
 
           <div className='form-wrapper'>
             <form method='POST' onSubmit={handleStateChange}>
+              {sent! ?
               <input placeholder="Name" value={name} onChange={e => setName(e.target.value)} required />
               <input placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
               <textarea cols="52" rows="7" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} required></textarea>
-              <button type='submit'>SEND MESSAGE</button>
+              <button type='submit'>SEND MESSAGE</button> : <h5>EMAIL SENT!</h5> }
             </form>
           </div>
         </div>
