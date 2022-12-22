@@ -76,7 +76,6 @@ const Contact = () => {
 
           <div className='contact-info-wrapper'>
             <div className='contact-info'>
-                {/* <video src={contact} autoPlay muted loop /> */}
                 <div className='info'>
                   <h1>Get in touch with me</h1>
                   <p>If you are interested in collaboration, need an outstanding website for your business or have any other kind of question just fill out the form.</p>
@@ -86,16 +85,16 @@ const Contact = () => {
                   <h3>&#8594; Novi Sad, Serbia</h3>
                   <div className='social-media-icons-contact'>
                     <div className='social-media-icon' target="_blank">
-                      <a href='/'><AiFillLinkedin /></a>
+                      <a href='/' target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
                     </div>
                     <div className='social-media-icon'>
-                      <a href='https://www.instagram.com/lara.celic/' target="_blank"><AiOutlineInstagram /></a>
+                      <a href='https://www.instagram.com/lara.celic/' target="_blank" rel="noreferrer"><AiOutlineInstagram /></a>
                     </div>
                     <div className='social-media-icon'>
-                      <a href='https://www.facebook.com/lara.celic.1' target="_blank"><AiFillFacebook /></a>
+                      <a href='https://www.facebook.com/lara.celic.1' target="_blank" rel="noreferrer"><AiFillFacebook /></a>
                     </div>
                     <div className='social-media-icon'>
-                      <a href='https://github.com/laraxlara' target="_blank"><AiOutlineGithub /></a>
+                      <a href='https://github.com/laraxlara' target="_blank" rel="noreferrer"><AiOutlineGithub /></a>
                     </div>
                   </div>
                 </div>

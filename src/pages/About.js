@@ -8,20 +8,20 @@ import '../styles/About.css'
 const About = () => {
   const fileUrl = 'https://laracelic-api.onrender.com/download'
 
-  const handleFileDownload = async () => {
-    const response = axios.get({
-      url: fileUrl,
-      method: 'GET',
-      responseType: 'blob',
-    }).then((response) => {
-      const url = window.URL.createObjectURL(new Blob([response.data]))
-      const link = document.createElement('a')
-      link.href = url
-      link.setAttribute('download', 'CV.pdf')
-      document.body.appendChild(link)
-      link.click()
-    })
-  }
+  // const handleFileDownload = async () => {
+  //   const response = axios.get({
+  //     url: fileUrl,
+  //     method: 'GET',
+  //     responseType: 'blob',
+  //   }).then((response) => {
+  //     const url = window.URL.createObjectURL(new Blob([response.data]))
+  //     const link = document.createElement('a')
+  //     link.href = url
+  //     link.setAttribute('download', 'CV.pdf')
+  //     document.body.appendChild(link)
+  //     link.click()
+  //   })
+  // }
   
   return (
     <Layout>
