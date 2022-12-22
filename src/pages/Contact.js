@@ -26,7 +26,7 @@ const Contact = () => {
         email,
         message
       })
-        .then((res) => res.json())
+        .then((response) => res.json())
         .then((data) => setMessage(data.message));
         console.log(response)
     } catch (error) {
