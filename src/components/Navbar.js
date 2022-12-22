@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <div className='social-media-icons'>
           <div className='linkdin-icon' target="_blank">
-            <a href='/' target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
+            <a href='https://www.linkedin.com/in/lara-celic-90565b25b/' target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
           </div>
           <div className='instagram-icon'>
             <a href='https://www.instagram.com/lara.celic/' target="_blank" rel="noreferrer"><AiOutlineInstagram /></a>

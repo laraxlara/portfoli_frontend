@@ -18,6 +18,7 @@ const Contact = () => {
   const [message, setMessage] = useState("")
 
   const handleStateChange = async e => {
+    e.preventDefault()
     try {
       const response = await fetch('https://laracelic-api.onrender.com/send')
         .then((res) => res.json())
@@ -26,48 +27,7 @@ const Contact = () => {
     } catch (error) {
       console.log(error)
     }
-    // e.preventDefault()
-    // setSent(true)
-    // try {
-    //   await axios.post('http://localhost:5000/send', {
-    //     name,
-    //     email,
-    //     message
-    //   })
-    //   console.log(name)
-    // } catch (error) {
-    //   console.log(error)
-    // }
   }
-
-  // const submitEmail = async (e) => {
-  //   e.preventDefault();
-  //   console.log({ mailerState });
-  //   const response = await fetch("http://localhost:5000/send", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-type": "application/json",
-  //     },
-  //     body: JSON.stringify({ mailerState }),
-  //   })
-  //     .then((res) => res.json())
-  //     .then(async (res) => {
-  //       const resData = await res;
-  //       console.log(resData);
-  //       if (resData.status === "success") {
-  //         alert("Message Sent");
-  //       } else if (resData.status === "fail") {
-  //         alert("Message failed to send");
-  //       }
-  //     })
-  //     .then(() => {
-  //       setMailerState({
-  //         email: "",
-  //         name: "",
-  //         message: "",
-  //       });
-  //     });
-  // };
   
   return (
     <Layout>
@@ -85,7 +45,7 @@ const Contact = () => {
                   <h3>&#8594; Novi Sad, Serbia</h3>
                   <div className='social-media-icons-contact'>
                     <div className='social-media-icon' target="_blank">
-                      <a href='/' target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
+                      <a href='https://www.linkedin.com/in/lara-celic-90565b25b/' target="_blank" rel="noreferrer"><AiFillLinkedin /></a>
                     </div>
                     <div className='social-media-icon'>
                       <a href='https://www.instagram.com/lara.celic/' target="_blank" rel="noreferrer"><AiOutlineInstagram /></a>

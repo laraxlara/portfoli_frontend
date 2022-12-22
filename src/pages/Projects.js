@@ -10,12 +10,11 @@ const Projects = () => {
         <div class="project">
             <div class="content">
                 <h2>EXECUTIVE LIMO SERVICE</h2>
-                <a className='project-link' target="_blank" rel="noopener noreferrer" href='http://executivelimoservicemiami.com/'>http://executivelimoservicemiami.com/ <br /></a>
                 <p>
                   Executive Limo Service is a luxury transportation service from Miami. <br />
                   Gatsby / Node JS 
                 </p>
-                <a href='https://github.com/laraxlara/limoservice' className='project-button'>View Project</a>
+                <a href='http://executivelimoservicemiami.com/' className='project-button'>View Project</a>
             </div>
         </div>
         <div class="project">
