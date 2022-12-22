@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
 import Layout from '../components/layout'
-import axios from 'axios'
 
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { AiFillFacebook } from 'react-icons/ai'
 import { AiOutlineGithub } from 'react-icons/ai'
-
-import contact from '../videos/contact2.mp4'
 
 import '../styles/Contact.css'
 
@@ -26,9 +23,8 @@ const Contact = () => {
         email,
         message
       })
-        .then((response) => res.json())
+        .then((response) => response.json())
         .then((data) => setMessage(data.message));
-        console.log(response)
     } catch (error) {
       console.log(error)
     }
@@ -38,7 +34,6 @@ const Contact = () => {
     <Layout>
     <div className='contact-page-container'>
         <div className='contact-page-wrapper'>
-
           <div className='contact-info-wrapper'>
             <div className='contact-info'>
                 <div className='info'>
