@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Layout from '../components/layout'
+import axios from 'axios'
 
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiOutlineInstagram } from 'react-icons/ai'
@@ -16,13 +17,12 @@ const Contact = () => {
   const handleStateChange = async e => {
     e.preventDefault()
     try {
-      const response = await fetch('https://laracelic-api.onrender.com/send', {
+      await axios.post('https://laracelic-api.onrender.com/send', {
         name,
         email,
         message
       })
-        .then((res) => res.json())
-        .then((data) => setMessage(data.message));
+      console.log(name)
     } catch (error) {
       console.log(error)
     }
@@ -61,9 +61,9 @@ const Contact = () => {
 
           <div className='form-wrapper'>
             <form onSubmit={handleStateChange}>
-              <input placeholder="Name" onChange={e => setName(e.target.value)} value={name} required />
-              <input placeholder="Email" onChange={e => setEmail(e.target.value)} value={email} required />
-              <textarea cols="52" rows="7" placeholder="Message" onChange={e => setMessage(e.target.value)} value={message} required></textarea>
+              <input placeholder="Name" value={name} onChange={e => setName(e.target.value)} required />
+              <input placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
+              <textarea cols="52" rows="7" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} required></textarea>
               <button type='submit'>SEND MESSAGE</button>
             </form>
           </div>
