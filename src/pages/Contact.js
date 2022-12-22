@@ -9,21 +9,19 @@ import { AiOutlineGithub } from 'react-icons/ai'
 import '../styles/Contact.css'
 
 const Contact = () => {
-  const [sent, setSent] = useState(false)
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
 
   const handleStateChange = async e => {
     e.preventDefault()
-    setSent(true)
     try {
       const response = await fetch('https://laracelic-api.onrender.com/send', {
         name,
         email,
         message
       })
-        .then((response) => response.json())
+        .then((res) => res.json())
         .then((data) => setMessage(data.message));
     } catch (error) {
       console.log(error)

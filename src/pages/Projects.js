@@ -14,7 +14,7 @@ const Projects = () => {
                   Executive Limo Service is a luxury transportation service from Miami. <br />
                   Gatsby / Node JS 
                 </p>
-                <a href='http://executivelimoservicemiami.com/' className='project-button'>View Project</a>
+                <a href='http://executivelimoservicemiami.com/' className='project-button'  target="_blank" rel="noreferrer">View Project</a>
             </div>
         </div>
         <div class="project">
