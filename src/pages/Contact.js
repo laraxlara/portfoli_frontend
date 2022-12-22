@@ -37,7 +37,6 @@ const Contact = () => {
     <Layout>
     <div className='contact-page-container'>
         <div className='contact-page-wrapper'>
-
           <div className='contact-info-wrapper'>
             <div className='contact-info'>
                 <div className='info'>
