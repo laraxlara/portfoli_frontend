@@ -19,15 +19,19 @@ const Contact = () => {
 
   const handleStateChange = async e => {
     e.preventDefault()
+    setSent(true)
     try {
-      const response = await fetch('https://laracelic-api.onrender.com/send')
+      const response = await fetch('https://laracelic-api.onrender.com/send', {
+        name,
+        email,
+        message
+      })
         .then((res) => res.json())
         .then((data) => setMessage(data.message));
         console.log(response)
     } catch (error) {
       console.log(error)
     }
-  }
   
   return (
     <Layout>
