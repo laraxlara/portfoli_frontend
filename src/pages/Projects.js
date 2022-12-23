@@ -24,7 +24,7 @@ const Projects = () => {
                   <br />
                   React JS / Node JS
               </p>
-              <a href='https://thecrafthut.onrender.com/' className='project-button'>View Project</a>
+              <a href='https://thecrafthut.onrender.com/' className='project-button' target="_blank" rel="noreferrer">View Project</a>
           </div>
         </div>
         <div class="project">
@@ -33,7 +33,7 @@ const Projects = () => {
               <p>
                 Gatsby
               </p>
-              <a href='https://github.com/laraxlara/restaurant' className='project-button'>View Project</a>
+              <a href='https://github.com/laraxlara/restaurant' className='project-button' target="_blank" rel="noreferrer">View Project</a>
           </div>
         </div>
         <div class="project">
@@ -42,7 +42,7 @@ const Projects = () => {
               <p>
                 React JS
               </p>
-              <a href='https://github.com/laraxlara/pba' className='project-button'>View Project</a>
+              <a href='https://github.com/laraxlara/pba' className='project-button' target="_blank" rel="noreferrer">View Project</a>
           </div>
         </div>
       </div>
