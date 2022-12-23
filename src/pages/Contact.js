@@ -22,7 +22,6 @@ const Contact = () => {
         email,
         message
       })
-      console.log(name)
     } catch (error) {
       console.log(error)
     }
