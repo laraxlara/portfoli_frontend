@@ -24,7 +24,7 @@ const Projects = () => {
                   <br />
                   React JS / Node JS
               </p>
-              <a href='https://github.com/laraxlara/beerstore' className='project-button'>View Project</a>
+              <a href='https://thecrafthut.onrender.com/' className='project-button'>View Project</a>
           </div>
         </div>
         <div class="project">
