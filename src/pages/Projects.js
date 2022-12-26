@@ -6,47 +6,47 @@ const Projects = () => {
   return (
     <Layout>
       <div className='projects-container'>
-      <div class="container">
-        <div class="project">
+        <div class="container">
+          <div class="project">
+              <div class="content">
+                  <h2>EXECUTIVE LIMO SERVICE</h2>
+                  <p>
+                    Executive Limo Service is a luxury transportation service from Miami. <br />
+                    Gatsby / Node JS 
+                  </p>
+                  <a href='http://executivelimoservicemiami.com/' className='project-button'  target="_blank" rel="noreferrer">View Project</a>
+              </div>
+          </div>
+          <div class="project">
             <div class="content">
-                <h2>EXECUTIVE LIMO SERVICE</h2>
+                <h2>Beer Store</h2>
                 <p>
-                  Executive Limo Service is a luxury transportation service from Miami. <br />
-                  Gatsby / Node JS 
+                    <br />
+                    React JS / Node JS
                 </p>
-                <a href='http://executivelimoservicemiami.com/' className='project-button'  target="_blank" rel="noreferrer">View Project</a>
+                <a href='https://thecrafthut.onrender.com/' className='project-button' target="_blank" rel="noreferrer">View Project</a>
             </div>
-        </div>
-        <div class="project">
-          <div class="content">
-              <h2>Beer Store</h2>
-              <p>
-                  <br />
-                  React JS / Node JS
-              </p>
-              <a href='https://thecrafthut.onrender.com/' className='project-button' target="_blank" rel="noreferrer">View Project</a>
           </div>
-        </div>
-        <div class="project">
-          <div class="content">
-              <h2>Restaurant</h2>
-              <p>
-                Gatsby
-              </p>
-              <a href='https://github.com/laraxlara/restaurant' className='project-button' target="_blank" rel="noreferrer">View Project</a>
+          <div class="project">
+            <div class="content">
+                <h2>Restaurant</h2>
+                <p>
+                  Gatsby
+                </p>
+                <a href='https://restaurant-vm9v.onrender.com' className='project-button' target="_blank" rel="noreferrer">View Project</a>
+            </div>
           </div>
-        </div>
-        <div class="project">
-          <div class="content">
-              <h2>Personal Branding Agency</h2>
-              <p>
-                React JS
-              </p>
-              <a href='https://github.com/laraxlara/pba' className='project-button' target="_blank" rel="noreferrer">View Project</a>
+          <div class="project">
+            <div class="content">
+                <h2>Personal Branding Agency</h2>
+                <p>
+                  React JS
+                </p>
+                <a href='https://pba.onrender.com' className='project-button' target="_blank" rel="noreferrer">View Project</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </Layout>
   )
 }
