@@ -33,7 +33,7 @@ const Projects = () => {
                 <p>
                   Gatsby
                 </p>
-                <a href='https://restaurant-vm9v.onrender.com' className='project-button' target="_blank" rel="noreferrer">View Project</a>
+                <a href='https://restaurant-ee3a.onrender.com/' className='project-button' target="_blank" rel="noreferrer">View Project</a>
             </div>
           </div>
           <div class="project">
@@ -42,7 +42,7 @@ const Projects = () => {
                 <p>
                   React JS
                 </p>
-                <a href='https://pba.onrender.com' className='project-button' target="_blank" rel="noreferrer">View Project</a>
+                <a href='https://personal-branding-agency.onrender.com/' className='project-button' target="_blank" rel="noreferrer">View Project</a>
             </div>
           </div>
         </div>
