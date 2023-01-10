@@ -1,7 +1,7 @@
 import React, { Suspense, useRef, useState, useEffect } from 'react'
 import * as THREE from 'three'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Html, useGLTF } from '@react-three/drei'
+import { Html } from '@react-three/drei'
 import { motion } from "framer-motion"
 
 import Layout from '../components/layout'

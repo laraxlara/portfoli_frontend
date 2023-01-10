@@ -10,6 +10,7 @@ import { AiOutlineGithub } from 'react-icons/ai'
 import '../styles/Contact.css'
 
 const Contact = () => {
+  const [sent, setSent] = useState(false)
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
@@ -22,6 +23,7 @@ const Contact = () => {
         email,
         message
       })
+      setSent(true)
     } catch (error) {
       console.log(error)
     }
@@ -59,12 +61,12 @@ const Contact = () => {
           </div>
 
           <div className='form-wrapper'>
-            <form method='POST' onSubmit={handleStateChange}>
+            {sent ? <h3>Your message has been sent!</h3> : <><form method='POST' onSubmit={handleStateChange}>
               <input placeholder="Name" value={name} onChange={e => setName(e.target.value)} required />
               <input placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required />
               <textarea cols="52" rows="7" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} required></textarea>
               <button type='submit'>SEND MESSAGE</button>
-            </form>
+            </form></>}
           </div>
         </div>
       </div>
