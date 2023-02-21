@@ -84,6 +84,20 @@ const Projects = () => {
               </a>
             </div>
           </div>
+          <div class="project">
+            <div class="content">
+              <h2>Iceland</h2>
+              <p>HTML / CSS / JS</p>
+              <a
+                href="https://visiticeland.onrender.com/"
+                className="project-button"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>

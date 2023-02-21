@@ -78,6 +78,11 @@
   background-size: cover;
   background-position: center;
 }
+.container .project:nth-child(6) {
+  background: url("../images/iceland.png");
+  background-size: cover;
+  background-position: center;
+}
 
 .container .project .content {
   position: absolute;
