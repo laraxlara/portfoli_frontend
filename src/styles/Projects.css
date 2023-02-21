@@ -1,153 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
 
-.projects-container{
-    background-color: black;
-    font-family: 'Source Code Pro', monospace;
+.projects-container {
+  background-color: black;
+  font-family: "Source Code Pro", monospace;
 }
 
 .content p {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .content a {
-    color: white;
+  color: white;
 }
 
 .content .project-button {
-    padding: 15px 25px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    background: black;
-    opacity: 50%;
-    border: 1px solid white;
-    outline: none;
-    margin: 15px;
-    font-size: 14px;
-    letter-spacing: 2px;
-    cursor: pointer;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  background: black;
+  opacity: 50%;
+  border: 1px solid white;
+  outline: none;
+  margin: 15px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .content .project-button:hover {
-    background-color: rgb(26, 26, 26);
+  background-color: rgb(26, 26, 26);
 }
-.container{
-    position: relative;
-    width: 100%;
-    display: flex;
-    padding-left: 6.5rem;
-    cursor: pointer;
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding-left: 6.5rem;
+  cursor: pointer;
 }
-.container .project{
-    position: relative;
-    height: 100vh; width: 25%;
-    transition: .5s;
-    transition-delay: .5s;
-    overflow: hidden;
+.container .project {
+  position: relative;
+  height: 100vh;
+  width: 25%;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  overflow: hidden;
 }
-.container:hover .project{
-    width: 10%;
+.container:hover .project {
+  width: 10%;
 }
-.container .project:hover{
-   width: 100%;
-   transition-delay: 0s;  
+.container .project:hover {
+  width: 100%;
+  transition-delay: 0s;
 }
-.container .project:nth-child(1){
-    background: url('../images/els.png');
-    background-size: cover;
-    background-position : center;
-} 
-.container .project:nth-child(2){
-    background: url('../images/beer.png');
-    background-size: cover;
-    background-position : center;
-} 
-.container .project:nth-child(3){
-    background: url('../images/restaurant.png');
-    background-size: cover;
-    background-position : center;
-} 
-.container .project:nth-child(4){
-    background: url('../images/pba.png');
-    background-size: cover;
-    background-position : center;
-} 
-/* .container .project:nth-child(5){
-    background: url('../images/icon.jpg');
-    background-size: cover;
-    background-position : center;
+.container .project:nth-child(1) {
+  background: url("../images/els.png");
+  background-size: cover;
+  background-position: center;
 }
-.container .project:nth-child(6){
-    background: url('../images/icon.jpg');
-    background-size: cover;
-    background-position : center;
-} */
-/* .container .project:nth-child(5){
-    background: url(https://loveincorporated.blob.core.windows.net/contentimages/gallery/03211459-0607-4d07-8a6c-9966e3820a7d-Mount-Kirkjufell-Iceland.jpg);
-    background-size: cover;
-    background-position : center;
-}  */
-
-.container .project .content{
-    position: absolute;
-    left: 20px;  right: 20px;  bottom: 20px;
-    transform: translateY(120%);
-    transition: .5s;
-    transition-delay: 0s;
-    background: rgba(0,0,0,.6);  color: #fff;
-    padding: 20px 40px;
-    box-sizing: border-project;
-    text-align: center;
+.container .project:nth-child(2) {
+  background: url("../images/beer.png");
+  background-size: cover;
+  background-position: center;
 }
-.container .project:hover .content{
-    transform: translateY(0);
-    transition-delay: .5s;
+.container .project:nth-child(3) {
+  background: url("../images/restaurant.png");
+  background-size: cover;
+  background-position: center;
+}
+.container .project:nth-child(4) {
+  background: url("../images/pba.png");
+  background-size: cover;
+  background-position: center;
+}
+.container .project:nth-child(5) {
+  background: url("../images/space.png");
+  background-size: cover;
+  background-position: center;
 }
 
-.container .project .content h2{
-    font-size: 25px;
-    margin-bottom: 10px;
+.container .project .content {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  transform: translateY(120%);
+  transition: 0.5s;
+  transition-delay: 0s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 20px 40px;
+  box-sizing: border-project;
+  text-align: center;
 }
-.container .project .content p{
-    font-size: 17px;
+.container .project:hover .content {
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.container .project .content h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.container .project .content p {
+  font-size: 17px;
 }
 
 @media only screen and (max-width: 1200px) {
-    .container {
-        padding-left: 0;
-    }
+  .container {
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 950px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        padding-top: 5rem;
-        background-color: black;
-        padding-left: 0;
-    }
-    .container .project{
-        position: relative;
-        height: 600px; 
-        width: 100%;
-    }
-    .container:hover .project{
-        width: 100%;
-    }
-    .container .project:hover{
-       width: 100%;
-       transition-delay: 0s;  
-    }
-    .container .project .content h2{
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-    .container .project .content p{
-        font-size: 11px;
-    }
-    .content .project-button {
-        font-size: 11px;
-        padding: 9px 14px;
-    }
-
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    background-color: black;
+    padding-left: 0;
+  }
+  .container .project {
+    position: relative;
+    height: 600px;
+    width: 100%;
+  }
+  .container:hover .project {
+    width: 100%;
+  }
+  .container .project:hover {
+    width: 100%;
+    transition-delay: 0s;
+  }
+  .container .project .content h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .container .project .content p {
+    font-size: 11px;
+  }
+  .content .project-button {
+    font-size: 11px;
+    padding: 9px 14px;
+  }
 }
